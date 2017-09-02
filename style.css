@@ -1,0 +1,147 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#map {
+  height: 100%;
+}
+
+.startInstruction {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  max-height: 200px;
+  max-width: 500px;
+  background-color: #5d5e60;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 0 20px 5px #5d5e60;
+}
+.visibility {
+  display: none;
+}
+.startBtn {
+  color: white;
+  background-color: #49f722;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.gamePanel, #map {
+  filter:blur(10px);
+}
+
+.gamePanel {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5d5e60;
+  color: white;
+  border-bottom: 5px solid #49f722;
+  border-top: b5px solid #49f722;
+  z-index: 2;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.currentScore, .timeLeft {
+  background-color: #7f8184;
+  /*border: 1px solid #b7babf;*/
+  /*border-radius: 20px;*/
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  box-shadow: 0 0 5px 2px #b7babf;
+  margin: 10px;
+
+}
+
+.currentScore *, .timeLeft * {
+  margin: 0;
+  padding: 0;
+}
+.city {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 2;
+  padding: 0 10px;
+
+}
+
+.request {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-width: 300px;
+  margin: 5px;
+}
+
+.request h2, .request h3 {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.request h3 {
+  color: #8b8d8e;
+}
+
+.request h2 {
+  font-size: 25px;
+  border-bottom: 3px solid #49f722;
+}
+
+.hint {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 10px;
+  align-items: center;
+  border: 1px solid #49f722;
+  margin: 10px;
+}
+
+.hintBtn {
+  color: white;
+  background-color: #49f722;
+  padding: 5px; margin: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none
+}
+
+.rightSide {
+  padding: 0 10px;
+}
+
+.rightSide span {
+  color: #49f722;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.hintDisplay {
+  display: none;
+}

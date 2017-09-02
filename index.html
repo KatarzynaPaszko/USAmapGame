@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa GMR Norte</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="startInstruction">
+      <h2>Sprawdź swoją znajomość mapy Stanów Zjednoczonych</h2>
+      <button class="startBtn">Rozpocznij grę !</button>
+    </div>
+
+    <div class="gamePanel">
+        <div class="currentScore">
+          <h3>Twój wynik:</h3>
+          <span>0</span>
+        </div>
+        <div class="city">
+          <div class="leftSide">
+            <div class="request">
+              <h3>Miasto:</h3>
+              <h2>New York</h2>
+            </div>
+            <div class="request hintDisplay">
+              <h3>Stan: </h3>
+              <h2>NEW YORK</h2>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="hint">
+              <p>Czy chcesz uzyskać podpowiedź?</p>
+              <button class="hintBtn">tak</button>
+            </div>
+          </div>
+          <div class="rightSide">
+            <h4>Pozostało <span>5</span> miast do odgadnięcia.</h4>
+          </div>
+        </div>
+        <div class="timeLeft">
+          <h3>Pozostały czas:</h3>
+          <span>60s</span>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"
+        async defer></script>
+  </body>
+</html>
